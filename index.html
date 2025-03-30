@@ -1,327 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
-
-    <!-- metas -->
-    <title>Nityanand Mathur - Data Scientist</title>
-    <meta name="description" content="Data Scientist and Researcher specializing in Computer Vision and Machine Learning" />
-    <meta property="og:title" content="Nityanand Mathur - Data Scientist">
-    <meta property="og:description" content="Data Scientist and Researcher specializing in Computer Vision and Machine Learning">
-    <meta property="og:image" content="https://nityanandmathur.com/assets/images/share.png">
-    <meta property="og:url" content="https://nityanandmathur.com">
-    <meta name="twitter:title" content="Nityanand Mathur - Data Scientist">
-    <meta name="twitter:description" content="Data Scientist and Researcher specializing in Computer Vision and Machine Learning">
-    <meta name="twitter:image" content="https://nityanandmathur.com/assets/images/share.png">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-    <!-- styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link media="all" rel="stylesheet" href="/build.css" />
-  </head>
-  <body>
-    <div class="FakeScroll"></div>
-    <div class="gl"></div>
-    <div class="Voile"></div>
-    <div class="Menu" data-component="Menu">
-      <nav>
-        <a href="/about" data-id="About" data-route="about">About</a>
-        <a href="/works" data-id="Work" data-route="work">Work</a>
-        <a class="selected" href="/" data-id="Home" data-route="home" alt="home" title="home"><span class="Menu-invisible">Home</span><span class="gg-symbol gg-symbol--disc"></span></a>
-      </nav>
-    </div>
-    <div class="Container">
-      <div class="Content">
-        <div class="Section Home" data-component="Home">
-          <div class="Home-content">
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3"></div>
-              <div class="gg-symbol gg-symbol--disc"></div>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--square"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3"></div>
-              <div class="gg-symbol gg-symbol--disc"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-            </div>
-            <div class="gg"></div>
-            <div class="gg gg--indent">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--square"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-            </div>
-            <div class="Title" data-component="Title">
-              <h1>Nityanand Mathur</h1>
-              <h2>Data Scientist</h2>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--disc"></div>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--4 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--9 gg-symbol--gradient"></div>
-            </div>
-            <div class="gg"></div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-            </div>
-            <div class="gg  gg-last">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--square"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-            </div>
-            <div class="Arrow" data-component="Arrow" data-ref="arrow"></div>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nityanand Mathur | Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+        
+        :root {
+            --text-color: #e1e1e1;
+            --light-text: #a0a0a0;
+            --background: #121212;
+            --paper: #1e1e1e;
+            --divider: #444;
+            --highlight: #64b5f6;
+            --link: #64b5f6;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--paper);
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'EB Garamond', Georgia, serif;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.05rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--divider);
+            padding-bottom: 0.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            letter-spacing: 0.05rem;
+            color: var(--highlight);
+        }
+        
+        a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link);
+            transition: all 0.2s ease;
+        }
+        
+        a:hover {
+            color: #90caf9;
+            border-bottom: 1px solid #90caf9;
+        }
+        
+        .contact {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .contact a {
+            margin: 0 0.5rem;
+            white-space: nowrap;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .item {
+            margin-bottom: 1.2rem;
+            padding: 0.8rem;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.03);
+            transition: all 0.2s ease;
+        }
+        
+        .item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.3rem;
+        }
+        
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #90caf9;
+        }
+        
+        .item-date {
+            color: var(--light-text);
+            font-style: italic;
+        }
+        
+        .item-subtitle {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: var(--light-text);
+            margin-bottom: 0.5rem;
+        }
+        
+        .item-content {
+            padding-left: 1rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.3rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .skill-category {
+            margin-bottom: 0.3rem;
+        }
+        
+        .skill-title {
+            font-weight: 600;
+            margin-right: 0.5rem;
+            color: #90caf9;
+        }
+        
+        .icon-link {
+            border-bottom: none;
+            margin-left: 0.3rem;
+        }
+        
+        .icon-link:hover {
+            border-bottom: none;
+            opacity: 0.8;
+        }
+        
+        em {
+            color: #bbdefb;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+                font-size: 16px;
+            }
+            
+            .item-header, .item-subtitle {
+                flex-direction: column;
+            }
+            
+            .contact a {
+                display: inline-block;
+                margin: 0.2rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nityanand Mathur</h1>
+        <div class="contact">
+            <a href="https://github.com/nityanandmathur"><i class="fab fa-github"></i> Github</a>
+            <a href="https://linkedin.com/in/nityanandmathur"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:nityanandmathur@gmail.com"><i class="fas fa-envelope"></i> nityanandmathur@gmail.com</a>
+            <a href="tel:+917247412358"><i class="fas fa-phone"></i> 7247412358</a>
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=-ev4rwcAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
         </div>
-        <div class="Section Work" data-component="Work">
-          <div class="Work-content">
-            <h3><span class="gg-symbol--gradient"></span>Experience</h3>
-            <ul class="Work-list">
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="bosch.png" href="#" target="_blank" rel="noopener">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">Bosch Research</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Machine Learning Intern</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="surrey.png" href="#" target="_blank" rel="noopener">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">University of Surrey</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Research Intern</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="ibm.png" href="#" target="_blank" rel="noopener">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">IBM</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Research Intern</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="osaka.png" href="#" target="_blank" rel="noopener">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">Osaka University</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Data Science Research Intern</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="cogxr.png" href="#" target="_blank" rel="noopener">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">CogXR Labs</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Computer Vision, MLOps Intern</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="iiitg.png" href="#" target="_blank" rel="noopener">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">IIIT Guwahati</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Research Intern - Dr. Ferdous Ahmed Barbhuiya</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="iiitg.png" href="#" target="_blank" rel="noopener">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">IIIT Guwahati</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Research Intern - Dr. Radhika Sukapuram</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-            </ul>
-            <h3><span class="gg-symbol--gradient"></span>Publications</h3>
-            <ul class="Lab-list">
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="clipdrawx.png" href="#" target="_blank" data-color="#924601">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">CLIPDrawX</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Primitive-based Explanations for Text Guided Sketch Synthesis</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="diffusekrona.png" href="#" target="_blank" data-color="#FFFFFF">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">DiffuseKronA</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Parameter Efficient Finetuning Method for Personalized Diffusion Models</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="svgcraft.png" href="#" target="_blank" data-color="#D73535">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">SVGCraft</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Beyond Single Object Text-to-SVG Synthesis with Comprehensive Canvas Layout</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-            </ul>
-            <h3><span class="gg-symbol--gradient"></span>Projects</h3>
-            <ul class="Lab-list">
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="dinoexplorer.png" href="#" target="_blank" data-color="#35D7CD">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">DINO Explorer 3</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Python, Computer Vision</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="cvp.png" href="#" target="_blank" data-color="#D7A935">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">CVP</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Python, PyTorch, Segmentation, GANs</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="chexpert.png" href="#" target="_blank" data-color="#524FFF">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">CheXpert</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Python, TensorFlow, Computer Vision</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-              <li>
-                <a class="WorkItem" data-component="WorkItem" data-src="classifycovid.png" href="#" target="_blank" data-color="#53DD50">
-                  <div class="WorkItem-content">
-                    <span class="WorkItem-title">Classify-Covid</span>
-                    <span class="WorkItem-dot"></span>
-                    <span class="WorkItem-subtitle">Python, TensorFlow, Docker, DVC</span>
-                  </div>
-                  <div class="WorkItem-roll gg-symbol--gradient"></div>
-                </a>
-              </li>
-            </ul>
-            <div class="Arrow" data-component="Arrow" data-ref="arrow"></div>
-          </div>
+    </header>
+    
+    <section class="section">
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Indian Institute Of Information Technology Guwahati</div>
+            </div>
+            <div class="item-subtitle">
+                <div>B. Tech in Computer Science & Engineering</div>
+                <div>GPA: 8.16/10</div>
+            </div>
         </div>
-        <div class="Section About" data-component="About">
-          <div class="About-content">
-            <h3>Hi, I'm Nityanand.</h3>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--4 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--disc"></div>
+    </section>
+    
+    <section class="section">
+        <h2>Publications</h2>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">CLIPDrawX: Primitive-based Explanations for Text Guided Sketch Synthesis</div>
+                <div><a href="https://clipdrawx.github.io/"><i class="fas fa-link"></i> Project</a></div>
             </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--6 gg-symbol--gradient"></div>
+            <div class="item-subtitle">
+                <div>Nityanand Mathur, Shyam Marjit, Abhra Chaudhuri, Anjan Dutta</div>
+                <div><a href="https://arxiv.org/abs/2312.02345"><i class="fas fa-file-alt"></i> Paper</a></div>
             </div>
-            <p>I'm a Data Scientist and Researcher specializing in Computer Vision and Machine Learning.<br>
-            I graduated from Indian Institute Of Information Technology Guwahati with a B.Tech in Computer Science & Engineering (GPA: 8.16/10).<br>
-            My research focuses on explainable AI, diffusion models, and text-to-image synthesis.<br>
-            I'm currently working as a Machine Learning Intern at Bosch Research.</p>
-            <h4>Technical Skills:</h4>
-            <p><strong>Languages:</strong> Python, SQL, Bash, C, Java, LaTeX<br>
-            <strong>Frameworks/Libraries:</strong> PyTorch, TensorFlow, Keras, Pandas, NumPy, Scikit Learn, OpenCV<br>
-            <strong>Tools:</strong> Docker, Git/GitHub, Unix Shell, PyTest, Weights and Biases, DVC, Hydra.cc, Hugging Face, AWS, Gradio</p>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--rect gg-symbol--6 gg-symbol--gradient"></div>
-            </div>
-            <div class="gg">
-              <div class="gg-symbol gg-symbol--square"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-              <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-            </div>
-            <div class="Arrow Arrow--reversed" data-component="Arrow" data-ref="arrow"></div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="Footer" data-component="Footer">
-      <ul>
-        <li><a href="mailto:nityanandmathur@gmail.com">Email</a></li>
-        <li><a href="https://github.com/nityanandmathur" target="_blank" rel="noopener">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/nityanandmathur/" target="_blank" rel="noopener">Linkedin</a></li>
-        <li><a href="https://scholar.google.com/citations?user=nityanandmathur" target="_blank" rel="noopener">Google Scholar</a></li>
-        <li><a href="tel:7247412358">Phone</a></li>
-      </ul>
-    </div>
-    <div class="Loader" data-component="Loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #19252B; z-index: 10;">
-      <div class="gg">
-        <div class="Loader-scaler">
-          <div class="gg-symbol gg-symbol--rect gg-symbol--9 gg-symbol--gradient"></div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">DiffuseKronA: Param. Efficient Finetuning Method for Personalized Diff'sn Models</div>
+                <div><a href="https://diffusekrona.github.io/"><i class="fas fa-link"></i> Project</a></div>
+            </div>
+            <div class="item-subtitle">
+                <div>Shyam Marjit, Harshit Singh, Nityanand Mathur, Sayak Paul, Chia-Mu Yu, Pin-Yu Chen</div>
+                <div><a href="https://arxiv.org/abs/2402.17412"><i class="fas fa-file-alt"></i> WACV</a></div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script src="/critical.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35394000-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-35394000-1');
-    </script>
-
-    <!-- Libs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
-
-    <!-- Scripts -->
-    <script src="/build.js"></script>
-  </body>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">SVGCraft: Beyond Single Object Text-to-SVG Syn. with Compr've Canvas Layout</div>
+                <div><a href="https://svgcraf.github.io/"><i class="fas fa-link"></i> Project</a></div>
+            </div>
+            <div class="item-subtitle">
+                <div>Ayan Banerjee, Nityanand Mathur, Josep Lladós, Umapada Pal, Anjan Dutta</div>
+                <div><a href="https://arxiv.org/abs/2404.00412"><i class="fas fa-file-alt"></i> Paper</a></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Work Experience</h2>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Smallest AI | Data Scientist</div>
+                <div class="item-date">October 2024 - Present</div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Developed a real-time, flow-based instant voice cloning model. Built professional voice cloning using LoRA.</li>
+                    <li>Optimized a TTS model, reducing latency from 300–400ms to 150–250ms, improving real-time performance.</li>
+                    <li>Implemented an end-to-end text normalization module to handle emails, websites, dates, numbers, etc.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Bosch Research | Machine Learning Intern</div>
+                <div class="item-date">Jan 2024 - August 2024</div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Created novel algorithms for synthetic dataset generation by object augmentation using latent diffusion models.</li>
+                    <li>Created parameter-efficient label preserving source-free domain adaptation and localised editing pipelines.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">University of Surrey | Research Intern - Dr. Anjan Dutta</div>
+                <div class="item-date">Jan 2023 - December 2023</div>
+            </div>
+            <div class="item-subtitle">
+                <div><a href="https://clipdrawx.github.io/"><i class="fas fa-link"></i> Project Page</a> | <a href="https://arxiv.org/abs/2312.02345"><i class="fas fa-file-alt"></i> Paper</a></div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Worked on introducing explainability to CLIP-based models using simple primitives, with an LDM-powered initialization for faster convergence. Introduced <em>Primitive-level Dropout</em> for noiseless sketch synthesis.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">IBM | Research Intern - Dr. Pin-Yu Chen</div>
+                <div class="item-date">June 2023 - December 2023</div>
+            </div>
+            <div class="item-subtitle">
+                <div><a href="https://diffusekrona.github.io/"><i class="fas fa-link"></i> Project Page</a> | <a href="https://drive.google.com/file/d/18XHitHkBLS_dJC3PxrHBGReH7I6JxexX/view?usp=sharing"><i class="fas fa-file-alt"></i> Paper</a></div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Worked on adding parameter-efficient <em>Kronecker Product</em> based adapters to personalized T2I models that are ~35% more efficient than SOTA, while generating images with high fidelity and text-alignment.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Osaka University | Data Science Research Intern | Dr. Manas Kala</div>
+                <div class="item-date">July 2023 - Sept 2023</div>
+            </div>
+            <div class="item-subtitle">
+                <div><a href="https://github.com/nityanandmathur/thermal_comfort_cfml"><i class="fab fa-github"></i></a> | <a href="https://huggingface.co/spaces/nityanandmathur/thermal_comfort"><i class="fas fa-cloud"></i></a></div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Applied counterfactual machine learning to thermal comfort dataset to simulate the comfort of students in winter conditions to find the impact of clothing, age, grade and gender. — <em>Work undergoing at univ.</em></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">CogXR Labs | Computer Vision, MLOps Intern</div>
+                <div class="item-date">Nov 2022 - March 2023</div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Implemented large-scale image classification algorithms on healthcare datasets with high accuracy.</li>
+                    <li>Created end-to-end production pipelines using docker containers, DVC, W&B and Pytest</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">IIIT Guwahati | Research Intern | Dr. Ferdous Ahmed Barbhuiya</div>
+                <div class="item-date">May 2022 - August 2022</div>
+            </div>
+            <div class="item-subtitle">
+                <div><a href="https://github.com/nityanandmathur/Hateful-meme-detection"><i class="fab fa-github"></i></a></div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Implemented VisualBERT-based multimodal hateful meme classification on social media.</li>
+                    <li>Integrated CLIP-based embeddings to improve accuracy from 75% to 81%.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">IIIT Guwahati | Research Intern | Dr. Radhika Sukapuram</div>
+                <div class="item-date">May 2022 - July 2022</div>
+            </div>
+            <div class="item-subtitle">
+                <div><a href="https://github.com/nityanandmathur/SC-MEC"><i class="fab fa-github"></i></a></div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Researched service caching algorithms in edge cloud to maximize the cache hit rate at edge devices.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Projects</h2>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">DINO Explorer <a href="https://pypi.org/project/dinoexplorer/" class="icon-link"><i class="fab fa-python"></i></a></div>
+                <div class="item-date">June 2024</div>
+            </div>
+            <div class="item-subtitle">
+                <div>Python, Computer Vision</div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Created a powerful tool designed to explore and visualize DINOv2 embeddings. Given a list of folders containing images, DINO Explorer extracts their DINO embeddings and creates an interactive visualization using Voxel51.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">CVP <a href="https://github.com/nityanandmathur/PytorchCV" class="icon-link"><i class="fab fa-github"></i></a></div>
+                <div class="item-date">January 2023</div>
+            </div>
+            <div class="item-subtitle">
+                <div>Python, Pytorch, Segmentation, GANs, Neural Style Transfer</div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Implemented U-net based image segmentation for humans & aerial image segmentation to detect roads in a map</li>
+                    <li>Implemented object localization for food items and neural style transfer using Efficient-net.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">CheXpert <a href="https://github.com/nityanandmathur/CheXpert/tree/nits_classifier" class="icon-link"><i class="fab fa-github"></i></a></div>
+                <div class="item-date">November 2022</div>
+            </div>
+            <div class="item-subtitle">
+                <div>Python, Tensorflow, Computer Vision, Docker, DVC, W&B, Git</div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Implemented a deep learning multi-label classifier to process an 11 GB medical image dataset, classifying X-ray images into 13 disease categories. Later, merged with the Classify-Covid project to add Covid.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Classify-Covid <a href="https://github.com/nityanandmathur/Classify_covid" class="icon-link"><i class="fab fa-github"></i></a> <a href="https://huggingface.co/nityanandmathur/Covid_Dataset/blob/main/covid.h5" class="icon-link"><i class="fas fa-cloud"></i></a></div>
+                <div class="item-date">August 2022</div>
+            </div>
+            <div class="item-subtitle">
+                <div>Python, Tensorflow, Computer Vision, Docker, DVC, W&B, Git</div>
+            </div>
+            <div class="item-content">
+                <ul>
+                    <li>Developed a binary classification model using DenseNet architecture to analyze a substantial X-ray dataset for COVID-19 detection, with 82% accuracy. Containerized using docker dev containers.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-category">
+                <span class="skill-title">Languages:</span>
+                <span>Python, SQL, Bash, C, Java, LaTeX</span>
+            </div>
+            <div class="skill-category">
+                <span class="skill-title">Frameworks/Libraries:</span>
+                <span>PyTorch, TensorFlow, Keras, Pandas, NumPy, Scikit Learn, and OpenCV</span>
+            </div>
+            <div class="skill-category">
+                <span class="skill-title">Tools:</span>
+                <span>Docker, Git/GitHub, Unix Shell, PyTest, Weights and Biases, DVC, Hydra.cc, Hugging Face, AWS, Gradio</span>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
