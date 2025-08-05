@@ -135,6 +135,8 @@
             box-shadow: 0 20px 40px var(--glass-shadow);
             position: relative;
             overflow: hidden;
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
         }
         
         .main-container::before {
@@ -161,6 +163,8 @@
             margin-top: -1rem;
             letter-spacing: 0.05rem;
             color: #ffffff;
+            opacity: 0;
+            transform: translateY(30px);
         }
         
         h2 {
@@ -173,6 +177,8 @@
             font-size: 1.4rem;
             letter-spacing: 0.05rem;
             color: #838080;
+            opacity: 0;
+            transform: translateX(-30px);
         }
         
         a {
@@ -191,6 +197,8 @@
             text-align: center;
             margin-bottom: 2rem;
             font-size: 0.9rem;
+            opacity: 0;
+            transform: translateY(20px);
         }
         
         .contact a {
@@ -214,6 +222,8 @@
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
         }
         
         .item::before {
@@ -608,5 +618,73 @@
         </div>
     </section>
     </div>
+    
+    <script>
+        // Utility function to animate elements
+        function animateElement(element, keyframes, options = {}) {
+            const defaults = {
+                duration: 600,
+                easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                fill: 'forwards'
+            };
+            return element.animate(keyframes, { ...defaults, ...options });
+        }
+
+        // Wait for page to load before starting animations
+        window.addEventListener('load', function() {
+            // Main container entrance animation
+            const mainContainer = document.querySelector('.main-container');
+            if (mainContainer) {
+                animateElement(mainContainer, [
+                    { opacity: 0, transform: 'translateY(50px) scale(0.95)' },
+                    { opacity: 1, transform: 'translateY(0px) scale(1)' }
+                ], { duration: 1000, delay: 200 });
+            }
+            
+            // Header title animation
+            const h1 = document.querySelector('h1');
+            if (h1) {
+                setTimeout(() => {
+                    animateElement(h1, [
+                        { opacity: 0, transform: 'translateY(30px)' },
+                        { opacity: 1, transform: 'translateY(0px)' }
+                    ], { duration: 800 });
+                }, 600);
+            }
+            
+            // Contact section animation
+            const contact = document.querySelector('.contact');
+            if (contact) {
+                setTimeout(() => {
+                    animateElement(contact, [
+                        { opacity: 0, transform: 'translateY(20px)' },
+                        { opacity: 1, transform: 'translateY(0px)' }
+                    ], { duration: 600 });
+                }, 800);
+            }
+            
+            // Section headings animation
+            const headings = document.querySelectorAll('h2');
+            headings.forEach((heading, index) => {
+                setTimeout(() => {
+                    animateElement(heading, [
+                        { opacity: 0, transform: 'translateX(-30px)' },
+                        { opacity: 1, transform: 'translateX(0px)' }
+                    ], { duration: 600 });
+                }, 1000 + (index * 100));
+            });
+            
+            // Item cards staggered animation
+            const items = document.querySelectorAll('.item');
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    animateElement(item, [
+                        { opacity: 0, transform: 'translateY(30px)' },
+                        { opacity: 1, transform: 'translateY(0px)' }
+                    ], { duration: 600 });
+                }, 1200 + (index * 150));
+            });
+        });
+    </script>
 </body>
 </html>
