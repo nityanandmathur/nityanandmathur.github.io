@@ -1,6 +1,8 @@
 ---
-title: Softwares/Apps I like
+title: Apps I like
 ---
+
+# Applications / Softwares that I like
 
 |Name|Link|Desc|
 |----|----|----|
