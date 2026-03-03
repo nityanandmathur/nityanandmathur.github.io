@@ -1,0 +1,349 @@
+%-------------------------
+% Resume in Latex
+% Author : Nityanand Mathur
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+% \usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\hypersetup{colorlinks = true, linkcolor = true, filecolor = magenta, urlcolor = blue, pdftitle = {Overleaf Example}, pdfpagemode = FullScreen}
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-1.25in} % Default was -.5in
+\addtolength{\textheight}{5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{0pt}
+
+\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+
+\newenvironment{tighten}{\vspace{-\topsep}\begin{enumerate}\itemsep1pt \parskip0pt \parsep0pt}{\end{enumerate}\vspace{-\topsep}}
+
+\newcommand{\myphoto}{\includegraphics[width=2cm]{grey_pic.png}} % Adjust the width as needed
+
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+    \vspace{10pt}
+  \color{gray}
+\end{flushright}
+
+% \vspace{8pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Nityanand Mathur} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/nityanandmathur}{\underline{Github}} $  $
+    % \faIcon{code}
+    % \href{https://nityanandmathur.live/index.html}
+    % {\underline{Web Page}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/nityanandmathur}{\underline{LinkedIn}} $  $
+    \faIcon{envelope}
+    \href{mailto:nityanandmathur@gmail.com}
+    {\underline{nityanandmathur@gmail.com}} $  $
+    \faIcon{phone}
+    \href{tel:+917247412358}{\underline{7247412358}}
+    \faIcon{graduation-cap}
+    \href{https://scholar.google.com/citations?view_op=list_works&hl=en&user=-ev4rwcAAAAJ}{\underline{Google Scholar}}
+
+\end{center}
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indian Institute Of Information Technology Guwahati}{}
+      {B. Tech in Computer Science \& Engineering}{GPA: 8.16/10}
+
+
+  \resumeSubHeadingListEnd
+
+\section{Publications}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {SonoEdit: Null-Space Constrained Knowledge Editing for LLM-based TTS}{}
+  {Ayush Pratap Singh, Harshit Singh, Nityanand Mathur, Akshat Mandloi, Sudarshan Kamath}{\href{https://arxiv.org/pdf/2601.17086}{\faIcon{file-alt} CPAL 26}}
+
+\resumeSubheading
+  {SVGCraft: Beyond Single Object Text-to-SVG Syn. with Compr've Canvas Layout}{\href{https://svgcraf.github.io/}{\faIcon{link} Project}}
+  {Ayan Banerjee, Nityanand Mathur, Josep Lladós , Umapada Pal, Anjan Dutta}{\href{https://arxiv.org/abs/2404.00412}{\faIcon{file-alt} WACV 26}}
+
+\resumeSubheading
+  {DiffuseKronA: Param. Efficient Finetuning Method for Personalized Diff'sn Models}{\href{https://diffusekrona.github.io/}{\faIcon{link} Project}}
+  {Shyam Marjit, Harshit Singh, Nityanand Mathur, Sayak Paul, Chia-Mu Yu, Pin-Yu Chen}{\href{https://arxiv.org/abs/2402.17412}{\faIcon{file-alt} WACV 25}}
+
+\resumeSubheading
+  {CLIPDrawX: Primitive-based Explanations for Text Guided Sketch Synthesis}{\href{https://clipdrawx.github.io/}{\faIcon{link} Project}}
+  {Nityanand Mathur, Shyam Marjit, Abhra Chaudhuri, Anjan Dutta}{\href{https://arxiv.org/abs/2312.02345}{\faIcon{file-alt} CVPR-W 25}}
+
+      
+      
+  \resumeSubHeadingListEnd
+
+\section{Patents}
+  \resumeSubHeadingListStart
+        \resumeSubheading
+      {\parbox[t]{0.865\linewidth}{A robust approach for on-demand generation of physically plausible imagery with specific localized objects using spatial attention}}{}
+  {Nityanand Mathur, Koutav Mullick, Sonam Singh, Amit Arvind Kale}
+  {\hspace{-7mm}App. 202541029889}
+
+        \resumeSubheading
+      {A method to generate physically plausible imagery}{}
+      {Nityanand Mathur, Koustav Mullcik, Deepanker Singh, Amit Arvind Kale}{\hspace{2mm}App. 202541033217}
+      
+  \resumeSubHeadingListEnd
+  
+% -------------------- Experience --------------------
+
+\section{Work Experience}
+  \resumeSubHeadingListStart
+            \resumeProjectHeading
+          {\textbf{Smallest AI} $|$ \footnotesize\emph{Data Scientist}\vspace{8pt}}{October 2024 - Present}
+          \vspace{-0.9em}
+          % {\small{
+          % \begin{tightemize}
+          %     \item Developed a real-time, flow-based instant voice cloning model. Built professional voice cloning using LoRA.
+          %     \item Optimized a TTS model, reducing latency from 300–400ms to 150–250ms, improving real-time performance.
+          %     \item Implemented an end-to-end text normalization module to handle emails, websites, dates, numbers, etc.
+          % \end{tightemize}}
+          % }
+        {\small{
+{\small{
+% \begin{tightemize}
+%   \item Created \textbf{Lightning V2}, a multilingual, real-time, voice-cloning, flow-based TTS model, and optimized it to run at 100ms latency and integrated ti into production pipelines for enterprise clients like PayTM, MMT, HDFC.
+%   \item Built a robust, production-grade multilingual text normalization service covering 16 languages.
+%   \item Created a LoRA-based voice finetuning service enabling high-fidelity voice cloning from short samples.
+%   \item Reduced latency of earlier \textbf{Lightning} model from 350ms to 140ms, enhancing real-time performance.
+% \end{tightemize}
+\begin{tightemize}
+  \item Optimized \textbf{Lightning V1}, redesigning inference and streaming pipelines to reduce end-to-end latency from 280--380ms to 140--280ms, significantly improving real-time production performance.
+
+  \item Built an ultra-fast ($<$3ms) production-grade multilingual \textbf{text normalization service} from scratch, handling complex TTS edge cases and linguistic variations across multiple languages.
+
+  \item Created \textbf{Lightning V2}, a multilingual, real-time, streaming flow-matching-based voice cloning TTS system with $\sim$100ms TTFB and 0.02 RTF, supporting 16 languages.
+  
+  \item Designed and built \textbf{Lightning V3.1}, an ultra-expressive, instruction-following real-time TTS model, achieving $\sim$120ms TTFB with support for 20 concurrent streams through optimized serving and inference infrastructure.
+\end{tightemize}
+
+}}
+        
+        
+  
+        \resumeProjectHeading
+          {\textbf{Bosch Research} $|$ \footnotesize\emph{Machine Learning Intern }\vspace{8pt}}{Jan 2024 - August 2024}
+          \vspace{-0.9em}
+          {\small{\begin{tightemize}
+              \item Created novel algorithms for synthetic dataset generation by object augmentation using latent diffusion models.
+              \item Created parameter-efficient label preserving source-free domain adaptation and localised editing pipelines.
+          \end{tightemize}}}
+          
+        \resumeProjectHeading
+          {\textbf{University of Surrey} $|$ \footnotesize\emph{Research Intern - \href{https://sites.google.com/site/2adutta/}{Dr. Anjan Dutta} $|$ \href{https://clipdrawx.github.io/}{\faIcon{link} Project Page} $|$ \href{https://arxiv.org/abs/2312.02345}{\faIcon{file-alt} Paper}}\vspace{8pt}}{Jan, 2023 -- December, 2023}
+          \vspace{-0.9em}
+          {\small{\begin{tightemize}
+              \item Worked on introducing explainability to CLIP-based models using simple primitives, with an LDM-powered initialization for faster convergence. Introduced \emph{Primitive-level Dropout} for noiseless sketch synthesis.
+          \end{tightemize}}}
+          
+        \resumeProjectHeading
+          {\textbf{IBM} $|$ \footnotesize\emph{Research Intern - \href{https://sites.google.com/site/pinyuchenpage/home}{Dr. Pin-Yu Chen} $|$ \href{https://diffusekrona.github.io/}{\faIcon{link} Project Page} $|$ {\href{https://drive.google.com/file/d/18XHitHkBLS_dJC3PxrHBGReH7I6JxexX/view?usp=sharing}{\faIcon{file-alt} Paper}}}\vspace{8pt}}{June, 2023 - December, 2023}
+          \vspace{-0.9em}
+          {\small{\begin{tightemize}
+              \item Worked on adding parameter-efficient \emph{Kronecker Product} based adapters to personalized T2I models that are $\sim$35\% more efficient than SOTA, while generating images with high fidelity and text-alignment.
+          \end{tightemize}}}
+
+
+        \resumeProjectHeading
+          {\textbf{Osaka University}\vspace{8pt} $|$ \footnotesize\emph{Data Science Research Intern | \href{https://in.linkedin.com/in/manas-kala}{Dr. Manas Kala}} $|$ \href{https://github.com/nityanandmathur/thermal_comfort_cfml}{\faIcon{github}} \href{https://huggingface.co/spaces/nityanandmathur/thermal_comfort}{\faIcon{cloud}}}{July, 2023 - Sept, 2023}
+          \vspace{-0.9em}
+          \small{\begin{tightemize}
+              \item Applied counterfactual machine learning to thermal comfort dataset to simulate the comfort of students in winter conditions to find the impact of clothing, age, grade and gender. -- \emph{Work undergoing at univ.}
+          \end{tightemize}}
+
+        % \resumeProjectHeading
+        %   {\textbf{CogXR Labs} $|$ \footnotesize\emph{Computer Vision, MLOps Intern}\vspace{8pt}}{Nov, 2022 -- March, 2023}
+        %   \vspace{-0.9em}
+        %   {\small{\begin{tightemize}
+        %       \item Implemented large-scale image classification algorithms on healthcare datasets with high accuracy.
+        %       \item Created end-to-end production pipelines using docker containers, DVC, W\&B and Pytest
+        %   \end{tightemize}}}
+
+        % \resumeProjectHeading
+        %   {\textbf{IIIT Guwahati}\vspace{8pt} $|$ \footnotesize\emph{Research Intern | \href{https://www.iiitg.ac.in/faculty/ferdous/}{Dr. Ferdous Ahmed Barbhuiya}} $|$ \href{https://github.com/nityanandmathur/Hateful-meme-detection}{\faIcon{github}}}{May, 2022 - August, 2022}
+        %   \vspace{-0.9em}
+        %   {\small{\begin{tightemize}
+        %       \item Implemented VisualBERT-based multimodal hateful meme classification on social media.
+        %       \item Integrated CLIP-based embeddings to improve accuracy from $75\%$ to $81\%$.
+        %   \end{tightemize}}}
+
+        % \resumeProjectHeading
+        %   {\textbf{IIIT Guwahati}\vspace{8pt} $|$ \footnotesize\emph{Research Intern | \href{https://www.iiitg.ac.in/faculty/radhika/}{Dr. Radhika Sukapuram}} $|$ \href{https://github.com/nityanandmathur/SC-MEC}{\faIcon{github}}}{May, 2022 -- July, 2022}
+        %   \vspace{-0.9em}
+        %   {\small{\begin{tightemize}
+        %       \item Researched service caching algorithms in edge cloud to maximize the cache hit rate at edge devices.
+        %   \end{tightemize}}}
+          }}
+    \resumeSubHeadingListEnd 
+
+% -------------------- PROJECTS --------------------
+\section{Tools}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{PipScope \href{https://pypi.org/project/pipscope/}\faPython} $|$ \footnotesize\emph{Python, Developer Tools}}{2025}
+    \resumeItemListStart
+        \resumeItem{Built a lightweight TUI tool to inspect, analyze, and debug Python environments \textbf{interactively}.}
+    \resumeItemListEnd
+
+                \resumeProjectHeading
+        {\textbf{PyTorch Builder} $|$ \footnotesize\emph{Python, Computer Vision}}{}
+        \resumeItemListStart
+            \resumeItem{Created a an interactive tool for visualizing, debugging, and profiling PyTorch models with support for layer-wise inspection, live model graph exploration, customizable visualizations, and efficient tracking of tensor operations.}
+        \resumeItemListEnd
+
+        
+            \resumeProjectHeading
+        {\textbf{DINO Explorer \href{https://pypi.org/project/dinoexplorer/}\faPython} $|$ \footnotesize\emph{Python, Computer Vision}}{}
+        \resumeItemListStart
+            \resumeItem{Created a powerful tool designed to explore and visualize DINOv2 embeddings. Given a list of folders containing images, DINO Explorer extracts their DINO embeddings and creates an interactive visualization using Voxel51.}
+        \resumeItemListEnd
+
+        %          \resumeProjectHeading
+        % {\textbf{CVP \href{https://github.com/nityanandmathur/PytorchCV}{\faIcon{github}}} $|$ \footnotesize\emph{Python, Pytorch, Segmentation, GANs, Neural Style Transfer}}{January 2023}
+        % \resumeItemListStart
+        %     \resumeItem{Implemented U-net based image segmentation for humans \& aerial image segmentation to detect roads in a map}
+        %     \resumeItem{Implemented object localization for food items and neural style transfer using Efficient-net.}
+        % \resumeItemListEnd
+    
+        % \resumeProjectHeading
+        % {\textbf{CheXpert \href{https://github.com/nityanandmathur/CheXpert/tree/nits_classifier}{\faIcon{github}}} $|$ \footnotesize\emph{Python, Tensorflow, Computer Vision, Docker, DVC, W\&B, Git}}{November 2022}
+        % \resumeItemListStart
+        %     \resumeItem{Implemented a deep learning multi-label classifier to process an 11 GB medical image dataset, classifying X-ray images into 13 disease categories. Later, merged with the Classify-Covid project to add Covid.}
+        % \resumeItemListEnd
+          
+        % \resumeProjectHeading
+        % {\textbf{Classify-Covid \href{https://github.com/nityanandmathur/Classify_covid}{\faIcon{github}} \href{https://huggingface.co/nityanandmathur/Covid_Dataset/blob/main/covid.h5}{\faIcon{cloud}}} $|$ \footnotesize\emph{Python, Tensorflow, Computer Vision, Docker, DVC, W\&B, Git}}{August 2022}
+        % \resumeItemListStart
+        %     \resumeItem{Developed a binary classification model using DenseNet architecture to analyze a substantial X-ray dataset for COVID-19 detection, with 82\% accuracy. Containerized using docker dev containers.}
+        % \resumeItemListEnd
+    
+
+        % \resumeProjectHeading
+        % {\textbf{Hackathon Projects \href{https://github.com/nityanandmathur/WasteAgainstWaste}{\faIcon{github}} %\href{https://github.com/nityanandmathur/TheNewNormal}{\faIcon{github}}
+        % } $|$ \footnotesize\emph{Waste management, Heart-disease detection, Crowd-control}}{2021-22} \vspace{-0.3em}
+        % \small{\begin{tightemize}
+        %     \item Implemented an image classification model/dataset for waste management on a UAV to locate contaminated areas and report it to municipality. \textbf{II prize winner, BIT Mesra}
+        %     % \item Implemented a diabetes and blood-pressure detection system for individual healthcare, with 95\% accuracy, along with a crowd-detection system to prevent overcrowding in public places. \emph{Finalists, MANIT Bhopal}
+        % \end{tightemize}}
+          
+    \resumeSubHeadingListEnd
+% -------------------- Skills --------------------
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: Python, SQL, Bash, C, Java, \LaTeX} \\
+
+     \textbf{Frameworks/Libraries}{: PyTorch, TensorFlow, Keras, Pandas, NumPy, Scikit Learn, and OpenCV}\\
+     
+     \textbf{Tools}{: Docker, Git/GitHub, Unix Shell, PyTest, Weights and Biases, DVC, Hydra.cc, Hugging Face, AWS, Gradio}
+     }}
+ \end{itemize}
+ 
+% \section{Extracurricular activities}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+    
+%      \textbf{Club Coordinator}{: Mavericks, ML Club @ IIITG; took hands-on sessions on Machine Learning}
+%      }}
+     
+ % \end{itemize}
+
+\end{document}
