@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools — Nityanand Mathur</title>
+    <meta name="description" content="Hosted bootstrap tools: VM setup, research docs kit, and CLAUDE.md guidelines.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nityanandmathur.com/tools/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --text-color: #e1e1e1;
+            --light-text: #a0a0a0;
+            --background: #000000;
+            --glass-bg: rgba(30, 30, 30, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: rgba(0, 0, 0, 0.5);
+            --divider: rgba(255, 255, 255, 0.15);
+            --highlight: #64b5f6;
+            --link: #90caf9;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: #000000;
+            background-image: radial-gradient(circle, #333333 1px, transparent 1px);
+            background-size: 20px 20px;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .main-container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px var(--glass-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .topnav a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link);
+        }
+
+        .topnav a:hover {
+            border-bottom-style: solid;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            letter-spacing: 0.04rem;
+            color: #fff;
+            margin-bottom: 0.4rem;
+        }
+
+        .lede {
+            color: var(--light-text);
+            font-size: 1.15rem;
+            margin-bottom: 2.2rem;
+            max-width: 36em;
+        }
+
+        .tool {
+            margin-bottom: 1.4rem;
+            padding: 1.4rem 1.5rem;
+            border-radius: 18px;
+            background: rgba(20, 20, 20, 0.75);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .tool-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.35rem;
+        }
+
+        .tool-title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            background: linear-gradient(135deg, #90caf9, #64b5f6, #42a5f5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tool-path {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.78rem;
+            color: var(--light-text);
+        }
+
+        .tool-path a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link);
+        }
+
+        .tool p {
+            color: var(--text-color);
+            margin: 0.5rem 0 0.9rem;
+        }
+
+        .tool ul {
+            margin: 0 0 1rem 1.1rem;
+            color: var(--light-text);
+            font-size: 0.98rem;
+        }
+
+        .tool li { margin-bottom: 0.25rem; }
+
+        .label {
+            font-size: 0.75rem;
+            letter-spacing: 0.08rem;
+            text-transform: uppercase;
+            color: #838080;
+            margin-bottom: 0.35rem;
+        }
+
+        pre {
+            margin: 0;
+            padding: 0.9rem 1rem;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.55);
+            border: 1px solid rgba(255,255,255,0.08);
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.82rem;
+            color: #d7e9ff;
+            line-height: 1.55;
+        }
+
+        pre + .label { margin-top: 0.9rem; }
+
+        .foot {
+            margin-top: 2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid var(--divider);
+            color: var(--light-text);
+            font-size: 0.95rem;
+        }
+
+        .foot a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--link);
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 1rem; }
+            .main-container { padding: 1.6rem; border-radius: 18px; }
+            h1 { font-size: 2rem; }
+            pre { padding: 0.75rem; }
+            code { font-size: 0.74rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="topnav">
+            <a href="/">← nityanandmathur.com</a>
+            <span style="color:var(--light-text)">bootstrap kits</span>
+        </div>
+
+        <h1>Tools</h1>
+        <p class="lede">One-liners to bootstrap a GPU box, drop a research docs site into any repo, or install shared Claude guidelines.</p>
+
+        <article class="tool" id="setup">
+            <div class="tool-header">
+                <div class="tool-title">VM setup</div>
+                <div class="tool-path"><a href="/setup.sh">/setup.sh</a></div>
+            </div>
+            <p>Idempotent bootstrap for a fresh SSH / RunPod machine.</p>
+            <ul>
+                <li>bashrc aliases (<code>ll</code>, <code>gs</code>/<code>wgs</code>, <code>tls</code>/<code>ta</code>, <code>dus</code>) + git prompt</li>
+                <li>GitHub CLI (<code>gh</code>)</li>
+                <li>Claude Code CLI</li>
+                <li>Hugging Face CLI (<code>hf</code>)</li>
+                <li>gpustat</li>
+            </ul>
+            <div class="label">Install</div>
+            <pre><code>curl -fsSL https://nityanandmathur.com/setup.sh | bash</code></pre>
+            <div class="label">Then auth</div>
+            <pre><code>source ~/.bashrc
+gh auth login
+claude
+hf auth login</code></pre>
+        </article>
+
+        <article class="tool" id="docs">
+            <div class="tool-header">
+                <div class="tool-title">Research docs kit</div>
+                <div class="tool-path">
+                    <a href="/docs.sh">/docs.sh</a> ·
+                    <a href="/docs/">preview</a>
+                </div>
+            </div>
+            <p>Drops the house <code>docs/</code> scaffold into the current repo (theme, hub + report pages, <code>serve.py</code>).</p>
+            <ul>
+                <li>Re-run refreshes theme files only; keeps authored pages</li>
+                <li><code>--force</code> overwrites pages</li>
+                <li>Live design preview at <a href="/docs/">/docs/</a></li>
+            </ul>
+            <div class="label">Install</div>
+            <pre><code>curl -fsSL https://nityanandmathur.com/docs.sh | bash</code></pre>
+            <div class="label">With title</div>
+            <pre><code>curl -fsSL https://nityanandmathur.com/docs.sh | bash -s -- \
+  --title "My Paper" --tagline "One line."</code></pre>
+            <div class="label">Preview locally</div>
+            <pre><code>python3 docs/serve.py</code></pre>
+        </article>
+
+        <article class="tool" id="claude">
+            <div class="tool-header">
+                <div class="tool-title">CLAUDE.md</div>
+                <div class="tool-path"><a href="/claude.md">/claude.md</a></div>
+            </div>
+            <p>Shared behavioral guidelines for Claude Code. Writes <code>CLAUDE.md</code> at the repo root.</p>
+            <div class="label">Install</div>
+            <pre><code>curl -fsSL https://nityanandmathur.com/claude.md -o CLAUDE.md</code></pre>
+        </article>
+
+        <p class="foot">
+            Safe to re-run. Source lives in
+            <a href="https://github.com/nityanandmathur/nityanandmathur.github.io">nityanandmathur.github.io</a>.
+        </p>
+    </div>
+</body>
+</html>
